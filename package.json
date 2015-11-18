@@ -1,6 +1,6 @@
 {
   "name": "syslog-like-console",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node-syslog wrapper with same methods than console",
   "keywords": "syslog, wrapper, console",
   "homepage": "https://github.com/irontec/node-syslog-like-console",
@@ -10,7 +10,7 @@
   },
   "license" : {
       "type" : "EUPL",
-      "url" : "https://raw.githubusercontent.com/irontec/node-syslog-like-console/master/LICENSE.txt"
+      "url" : "https://raw.githubusercontent.com/irontec/node-isaac/master/LICENSE.txt"
   },
   "author": {
       "name": "Irontec SL",
