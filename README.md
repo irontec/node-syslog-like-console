@@ -1,15 +1,30 @@
-# node-syslog-easy
+# syslog-like-console
 
-node-syslog console style
+node-syslog wrapper with same methods than console
 
 ## Installation
 
-Download node at [nodejs.org](http://nodejs.org) and -syslog-easy you haven't already.
-
-With git ssh access to git.irontec.com properly [configured](http://doc.gitlab.com/ce/ssh/README.html), install the library on your project
+Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm i --save git+ssh://git@git.irontec.com:internet/node-syslog-easy.git
+npm i --save syslog-like-console
+```
+
+## Usage
+
+```js
+// Instance the logger
+// params are log name and mask level
+var log = require('syslog-like-console')('my-log-name', 'LOG_INFO');
+
+
+log.info('tag', 'message');
+log.info('message');
+
+log.log('tag', 'message');
+log.error('tag', 'message');
+log.warn('tag', 'message');
+log.debug('tag', 'message');
 ```
 
 ## Tests
